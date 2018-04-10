@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- meta data -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- title & style -->
+  <title>HTML5 Canvas</title>
+  <!-- local test CSS -->
+  <style>
+    /* canvas properties */
+    canvas {
+      width: 100vw;
+      height: 100vh;
+      border: 1px solid black;
+      background-color: azure;
+    }
+
+    /* header animation */
+    @keyframes h1Color {
+      0% {
+        color: red;
+      }
+      25% {
+        color: orange;
+      }
+      50% {
+        color: yellow;
+      }
+      75% {
+        color: orange;
+      }
+      100% {
+        color: red;
+      }
+    }
+
+    body {
+      background-color: #555;
+    }
+
+    h1 {
+      text-align: center;
+      /* animation: h1Color 10s 0s linear infinite alternate; */
+      animation-name: h1Color;
+      animation-duration: 10s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+  </style>
+</head> <!-- end head -->
+
+<body>
+  <h1>HTML5 Canvas</h1>
+  <canvas id="canvas" width="700" height="700"></canvas>
+  <!-- <canvas id="canvas"></canvas> -->
+  <script src="script.js"></script>
+</body> <!-- end body -->
+</html> <!-- end html -->
